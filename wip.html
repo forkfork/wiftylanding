@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create Instance</title>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+<h3>Landing Page</h3>
+<div class="container">
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <h3>Managed event streaming</h3>
+    <div>&nbsp;</div>
+    <div>Eventing built on Redis Streams +extra durability and security. Enterprise message streaming without the kitchen sink for $10/month.</div>
+    <div>&nbsp;</div>
+    <form>
+      <button type="submit" class="btn btn-primary">Sign up</button>
+    </form><!-- /input-group -->
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+</div>
+<hr />
+<h3>Getting started page</h3>
+<div class="container">
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <a href="https://gist.github.com/forkfork/3a42f474b0ef0477349d1d522abb9638">Here</a>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+</div>
+<hr />
+<h3>Instances Page</h3>
+<div class="container">
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <form>
+      <div class="form-group">
+        <label for="region">Region:&nbsp;</label>
+        <select id="region" class="form-control">
+          <option value="USA" selected="selected">USA</option>
+          <option value="EU">Europe</option>
+          <option value="AUS">Australia</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="instance_name">Instance Name (will become [name].wiftycloud.com):</label>
+        <input id="instance_name" type="text" class="form-control" aria-label="...">
+      </div>
+      <button type="submit" class="btn btn-primary">Create Instance</button>
+    </form><!-- /input-group -->
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+</div>
+<hr />
+<div class="container">
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <h3>Running Instances (count = 1)</h3>
+    <form>
+      <div class="form-group">
+        <table>
+          <tr>
+            <td><label for="name">Instance Name:</label></td>
+            <td>&nbsp;&nbsp;</td>
+            <td><label class="text-muted" id="name">luxury-escapes.wiftycloud.com</label></td>
+          </tr>
+          <tr>
+            <td><label for="region">Region:</label></td>
+            <td></td>
+            <td><label class="text-muted" id="region">USA</label></td>
+          </tr>
+          <tr>
+            <td><label for="memory">Memory Usage:</label></td>
+            <td></td>
+            <td><label class="text-muted" id="memory">805.40K / 400M</label></td>
+          </tr>
+          <tr>
+            <td><label for="password">Reset Password:</label></td>
+            <td></td>
+            <td><button type="button" class="btn btn-primary" id="password">Reset Password</button></td>
+          </tr>
+          <tr>
+            <td><label for="flush">Flush Instance:</label></td>
+            <td></td>
+            <td><button type="button" class="btn btn-danger" id="flush">Wipe all data</button></td>
+          </tr> 
+          <tr>
+            <td><label for="delete">Delete Instance:</label></td>
+            <td></td>
+            <td><button type="button" class="btn btn-danger" id="delete">Delete instance</button></td>
+          </tr>
+        </table>
+      </div>
+    </form><!-- /input-group -->
+    <div>
+      Documentation can be found <a href="#">here</a>
+    </div>
+  </div>
+  <div class="col-lg-2"></div>
+</div>
+</div>
+</body>
+</html> 
