@@ -4,4 +4,4 @@ jobs:
      machine: true
      steps:
        - checkout
-       - run: aws s3 cp wip.html s3://wiftycloudcom/wip.html --acl public-read
+       - run: aws s3 cp wip.html s3://wiftycloudcom/ --acl public-read
